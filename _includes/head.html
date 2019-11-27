@@ -1,34 +1,37 @@
 <head>
-  <meta charset="utf-8" />
-  <!-- multi-device width -->
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <!-- site description -->
-  {% if page.excerpt %}
-  {% assign desc = page.excerpt | strip_html |
-  strip_newlines | truncate: 160 %}
-  {% else %}
-  {% assign desc = site.description
-  %}
-  {% endif %}
-  <meta content="{{ desc }}" name="description" />
-  <!-- referer for 3rd-part images-->
-  <meta content="no-referrer" name="referrer" />
-  <!-- title -->
-  <title>
-    {% if page.title %}
-    {{ page.title | escape }}
+    <meta charset="utf-8">
+    <!-- multi-device width -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta property="og:type" content="website">
+    <!-- site description -->
+    {% if page.excerpt %}
+        {% assign desc = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
     {% else %}
-    {{ site.title | escape }}
+        {% assign desc = site.description %}
     {% endif %}
-  </title>
-  <!-- icon -->
-  <link href="{{site.url }}{{site.baseurl}}{{site.assets_path}}/img/favicon.ico?" rel="shortcut icon bookmark" type="image/x-icon" />
-  <!-- main stylesheet -->
-  <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}{{site.assets_path}}/css/main.css" type="text/css" />
-  <!-- fa 5.9.0 -->
-  <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}{{site.assets_path}}/css/fa.min.css" type="text/css" />
-  <!-- rouge theme-->
-  <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}{{site.assets_path}}/css/rouge-bg.css" />
-  <!-- mathjax 2.7.5 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
-  </head>
+    <meta name="description" content="{{ desc }}">
+    <meta property="og:description" content="{{ desc }}">
+    <!-- referer for 3rd-part images-->
+    <meta content="no-referrer" name="referrer">
+    <meta property="og:url" content="{{site.url}}{{site.baseurl}}">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
+    <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml">
+    <!-- title -->
+    {% if page.title %}
+        {% assign title = page.title | escape %}
+    {% else %}
+        {% assign title = site.title | escape %}
+    {% endif %}
+    <meta property="og:title" content="{{ title }}">
+    <title>{{ title }}</title>
+    <!-- icon -->
+    <link href="{{site.url }}{{site.baseurl}}{{site.assets_path}}/img/favicon.ico?" rel="shortcut icon bookmark" type="image/x-icon">
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}{{site.assets_path}}/css/main.css" type="text/css">
+    <!-- fa 5.9.0 -->
+    <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}{{site.assets_path}}/css/fa.min.css" type="text/css">
+    <!-- rouge theme-->
+    <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}{{site.assets_path}}/css/rouge-bg.css">
+    <!-- mathjax 2.7.5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+</head>

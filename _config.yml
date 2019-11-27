@@ -1,5 +1,5 @@
 ## Settings
-title: h3ll0 w0rld!
+title: "h3ll0 w0rld!"
 owner: "0cool-f"
 url: "https://0cool-f.github.io"
 baseurl: "/jekyll"
@@ -13,9 +13,27 @@ webrick:
 email: "ravnos.1@tiscali.it"
 github: "0cool-f/jekyll"
 # path to: css/, fonts/, img/ and js/
-assets_path: "/assets" # i.e. "/assets" 
+assets_path: "/assets" # i.e. "/assets"
 statement: "welcome to this Jekyll thing"
 # default max toc levels: 1 - 6 (h1 - h6)
 toc_level: 3
 # texts randomly displayed in background
 bgtext: "αβγδεζηθικλμνξοπρστυφχψω∷∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌√"
+
+# Enter your Google Analytics web tracking code (e.g. UA-153211609-1) to activate tracking
+# google_analytics: UA-XXXXXXXXX-X
+
+# css compress
+sass:
+  style: :compressed
+
+# html compress settings
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
+#  blanklines: true
+#  profile: false
+#  startings: [] # all
