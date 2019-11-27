@@ -4,7 +4,7 @@ owner: "0cool-f"
 url: "https://0cool-f.github.io"
 baseurl: "/jekyll"
 permalink: /:title/
-description: ""
+description: "questo ostico jekill"
 markdown: kramdown
 webrick:
   headers:
@@ -30,10 +30,11 @@ sass:
 # html compress settings
 compress_html:
   clippings: all
-  comments: ["<!-- ", " -->"]
+  comments: all
   endings: all
   ignore:
     envs: ['development']
 #  blanklines: true
 #  profile: false
 #  startings: [] # all
+# ["<!-- ", " -->"]
