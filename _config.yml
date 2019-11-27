@@ -1,8 +1,8 @@
 ## Settings
 title: h3ll0 w0rld!
 owner: "0cool-f"
-url: "https://0cool_f.github.io"
-baseurl: "/"
+url: "https://0cool-f.github.io"
+baseurl: "/test"
 permalink: /:title/
 description: ""
 markdown: kramdown
