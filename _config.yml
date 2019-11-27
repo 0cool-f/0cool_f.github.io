@@ -1,8 +1,8 @@
 ## Settings
-title: pRoJEct-NeGYa
-owner: "DeerRIDER"
+title: h3ll0 w0rld!
+owner: "0cool-f"
 url: "https://0cool_f.github.io"
-baseurl: "/pRoJEct-NeGYa"
+baseurl: "/"
 permalink: /:title/
 description: ""
 markdown: kramdown
@@ -10,11 +10,11 @@ webrick:
   headers:
     Access-Control-Allow-Origin: "*"
 ## Global Variables
-email: "akiritsu@outlook.com"
-github: "akiritsu/pRoJEct-NeGYa"
+email: "ravnos.1@tiscali.it"
+github: "0cool-f/0cool_f.github.io"
 # path to: css/, fonts/, img/ and js/
 assets_path: "/assets" # i.e. "/assets" 
-statement: "Designed by DeerRIDER, All Rights Reserved"
+statement: "welcome to this Jekyll thing"
 # default max toc levels: 1 - 6 (h1 - h6)
 toc_level: 3
 # texts randomly displayed in background
