@@ -2,7 +2,7 @@
 title: h3ll0 w0rld!
 owner: "0cool-f"
 url: "https://0cool-f.github.io"
-baseurl: "/test"
+baseurl: "/jekyll"
 permalink: /:title/
 description: ""
 markdown: kramdown
@@ -11,7 +11,7 @@ webrick:
     Access-Control-Allow-Origin: "*"
 ## Global Variables
 email: "ravnos.1@tiscali.it"
-github: "0cool-f/0cool_f.github.io"
+github: "0cool-f/jekyll"
 # path to: css/, fonts/, img/ and js/
 assets_path: "/assets" # i.e. "/assets" 
 statement: "welcome to this Jekyll thing"
