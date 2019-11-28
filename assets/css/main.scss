@@ -359,10 +359,13 @@ body {
     color: $color-primary;
   }
   a:link {
-    font-style: underline;
+    text-decoration: none;
   }
   a:hover {
-    font-weight: bold;
+    /*font-weight: bold;*/
+  }
+  a:hover p {
+    text-decoration: underline;
   }
   img {
     max-width: 100%;
