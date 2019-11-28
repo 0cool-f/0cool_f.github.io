@@ -5,8 +5,8 @@ toc: false
 home_btn: true
 btn_text: true
 footer: true
-title: ""
-author: ""
+title: "Home"
+author: "0cool-f"
 encrypted_text: false
 permalink: /
 ---
