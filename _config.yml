@@ -33,8 +33,11 @@ compress_html:
   comments: all
   endings: all
   ignore:
-    envs: ['development']
+    envs: all
 #  blanklines: true
 #  profile: false
 #  startings: [] # all
 # ["<!-- ", " -->"]
+
+plugins:
+  - jekyll-minifier
