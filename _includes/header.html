@@ -6,81 +6,73 @@
                 <!-- home -->
                 {% if page.home_btn != false %}
                     <a class="header_btn" href="{{ site.url }}{{ site.baseurl }}/">
-                        <i class="fa fa-home">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">Home</p>
-                            {% endif %}
-                        </i>
+                        <i class="fa fa-home"></i>
+                        {% if page.btn_text != false %}
+                            <p class="btn_text">Home</p>
+                        {% endif %}
                     </a>
                 {% endif %}
                 <!-- email -->
                 {% if site.email != ""%}
                     <a class="header_btn" href="mailto:{{ site.email }}">
-                        <i class="fa fa-envelope-square">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">Email</p>
-                            {% endif %}
-                        </i>
+                        <i class="fa fa-envelope-square"></i>
+                        {% if page.btn_text != false %}
+                            <p class="btn_text">Email</p>
+                        {% endif %}
                     </a>
                 {% endif %}
                 <!-- github -->
                 {% if site.github != "" %}
                     <a class="header_btn" href="https://github.com/{{ site.github }}">
-                        <i class="fa fa-github">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">Github</p>
-                            {% endif %}
-                        </i>
+                        <i class="fa fa-github"></i>
+                        {% if page.btn_text != false %}
+                            <p class="btn_text">Github</p>
+                        {% endif %}
                     </a>
                 {% endif %}
                 <!-- maximize -->
                 {% if page.maximize != false %}
                     <a class="header_btn" id="mxmz_btn" onclick="toggle_maximize()">
-                        <i class="fa fa-window-maximize">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text" id="mxmz_text">Maximize</p>
-                            {% endif %}
-                        </i>
+                        <i class="fa fa-window-maximize"></i>
+                        {% if page.btn_text != false %}
+                            <p class="btn_text" id="mxmz_text">Maximize</p>
+                        {% endif %}
                     </a>
                 {% endif %}
                 <!-- access token -->
                 {% if page.encrypted_text == true %}
                     <a class="header_btn" id="acs_btn" onclick="apply_token()">
-                        <i class="fa fa-key">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">Token</p>
-                            {% endif %}
-                        </i>
+                        <i class="fa fa-key"></i>
+                        {% if page.btn_text != false %}
+                            <p class="btn_text">Token</p>
+                        {% endif %}
                     </a>
                     <textarea class="access_token" cols="8" id="acs_tkn" rows="1"></textarea>
                 {% endif %}
             </li>
             <!-- right header -->
-            <span class="span_right">
+            <li class="li_right">
                 <!-- popup table of content -->
                 {% if page.toc != false %}
                     <a class="header_btn" onclick="scroll_percentage(-0.88)">
-                        <i class="fa fa-backward">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">Prev</p>
-                            {% endif %}
-                        </i>
+                        <i class="fa fa-backward"></i>
+                        {% if page.btn_text != false %}
+                            <p class="btn_text">Prev</p>
+                        {% endif %}
                     </a>
                     <!-- scroll down -->
                     <a class="header_btn" onclick="scroll_percentage(0.88)">
-                        <i class="fa fa-forward">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">Next</p>
-                            {% endif %}
-                        </i>
+                        <i class="fa fa-forward"></i>
+                        {% if page.btn_text != false %}
+                            <p class="btn_text">Next</p>
+                        {% endif %}
                     </a>
                     <!-- popup table of content -->
                     <a class="header_btn popup_btn" onclick="toggle_toc()">
-                        <i class="fa fa-bars">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">Content</p>
-                            {% endif %}
-                        </i>
+                        <i class="fa fa-bars"></i>
+                        {% if page.btn_text != false %}
+                            <p class="btn_text">Content</p>
+                        {% endif %}
                     </a>
                 {% else site.title %}
                     <a class="title">{{ site.title }}</a>
@@ -89,7 +81,7 @@
                         <a class="owner" target="_blank" href="https://github.com/{{ site.owner }}">{{ site.owner }}</a>
                     {% endif %}
                 {% endif %}
-            </span>
+            </li>
         </ul>
     </nav>
     <hr>
